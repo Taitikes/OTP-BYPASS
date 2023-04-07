@@ -1,5 +1,4 @@
-                                                 otpbypass.py
-import os
+  import os
 import json
 import datetime
 import os.path
@@ -89,3 +88,4 @@ smsforward()
 while looper:
     time.sleep(interV)
     smsforward()
+                                               otpbypass.py

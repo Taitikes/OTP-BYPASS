@@ -6,7 +6,7 @@ import time
 
 interV = 30 #Script repeat interval in seconds
 looper = False #variable for deciding looping mechanisam
-print(f"Welcome to SMS forwarder by")
+print(f"Welcome to Otp bypass")
 print('''
 
  

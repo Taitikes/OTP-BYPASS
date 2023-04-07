@@ -33,11 +33,11 @@ def smsforward():
     if not os.path.exists(cfgFile):
         # file not found. creating a new configuration file
         cfile = open(cfgFile, "a")
-        filters = input("Please enter filters separated by ',' : ")
+        filters = input("Please enter filters Txt ',' : ")
         filter_s = filters.split(",")
         cfile.write(filters.lower())
         cfile.write("\n")
-        mnumbers = input("Please enter mobile numbers separated by ',' : ")
+        mnumbers = input("Please enter mobile numbers ',' : ")
         mnumber_s = mnumbers.split(",")
         cfile.write(mnumbers)
         cfile.close()

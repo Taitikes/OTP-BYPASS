@@ -6,17 +6,19 @@ import time
 
 interV = 30 #Script repeat interval in seconds
 looper = False #variable for deciding looping mechanisam
-print(f"Welcome to OTP BYPASS")
+print(f"Welcome to SMS forwarder by")
 print('''
 
+ 
+ ██████╗██╗   ██╗██████╗ ███████╗██████╗      ██╗  ██╗    
+██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗     ╚██╗██╔╝    
+██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝█████╗╚███╔╝     
+██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗╚════╝██╔██╗     
+╚██████╗   ██║   ██████╔╝███████╗██║  ██║     ██╔╝ ██╗    
+ ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝     ╚═╝  ╚═╝    
+                                                          
 
- ██████╗██╗   ██╗██████╗ ███████╗██████╗      ██╗  ██╗
-██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗     ╚██╗██╔╝
-██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝█████╗╚███╔╝
-██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗╚════╝██╔██╗
-╚██████╗   ██║   ██████╔╝███████╗██║  ██║     ██╔╝ ██╗
- ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝     ╚═╝  ╚═╝
-<=================Created by Taitikes===============>
+                                                                      
 ''')
 
 # Defining function for forwarding sms
@@ -31,11 +33,11 @@ def smsforward():
     if not os.path.exists(cfgFile):
         # file not found. creating a new configuration file
         cfile = open(cfgFile, "a")
-        filters = input(" enter filters TXT ',' : ")
+        filters = input("Please enter filters separated by ',' : ")
         filter_s = filters.split(",")
         cfile.write(filters.lower())
         cfile.write("\n")
-        mnumbers = input("enter mobile numbers  ',' : ")
+        mnumbers = input("Please enter mobile numbers separated by ',' : ")
         mnumber_s = mnumbers.split(",")
         cfile.write(mnumbers)
         cfile.close()
@@ -88,4 +90,3 @@ smsforward()
 while looper:
     time.sleep(interV)
     smsforward()
-                                               otpbypass.py

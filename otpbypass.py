@@ -1,4 +1,4 @@
-GNU nano 7.2                                                    otpbypass.py
+                                                 otpbypass.py
 import os
 import json
 import datetime
